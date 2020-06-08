@@ -1,16 +1,97 @@
+# serene-wonderwoman
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serene hotel</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Contact Us</title>
+    <style>
+section {
+   
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+}
+.form {
+    font-size: 20px;
+}
+div.test input {
+    width: 200px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+div.emailtest input{
+    width: 430px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+div.texttest textarea{
+    width: 430px;
+    height: 60px;
+    margin-bottom: 20px;
+  
+}
+.form label {
+    font-size: 12px;
+    font-weight: lighter;
+    font-family: arial;
+}
+.submit a {
+    font-size: 12px;
+            font-family: arial;
+            border: 1px solid;
+            border-radius: 2px;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: white;
+           background-color: rgb(22, 15, 7);
+
+            
+}
+
+    </style>
 </head>
 <body>
-    
+    <section>
+       <div class="head">
+           <h3>Leave a message</h3>
+       </div>
+    </section>
+   <section>
+       <div class="form" style="margin-right: 20px;">
+           <label for="First name">First name</label><br>
+           <div class="test">
+           <input type="text" id="fname" name="firstname">
+       </div>
+    </div>
 
-
-
-    <script src="js/script.js"></script>
+       <div class="form">
+        <label for="Last name">Last name</label><br>
+        <div class="test">
+        <input type="text" id="fname" name="lastname">
+    </div>
+       </div>
+   </section>
+   <section>
+       <div class="form">
+        <label for="Email">Email address</label><br>
+        <div class="emailtest">
+        <input type="email" id="email" name="email">
+       </div>
+    </div>
+       </section>
+       <section>
+           <div class= "form">
+               <label for="subject">Your Message</label><br>
+               <div class="texttest">
+               <textarea id="subject" name="subject"></textarea>
+           </div>
+        </div>
+       </section>
+  <section>
+      <div class= "submit">
+         <a href="#">SUBMIT MESSAGE</a>
+      </div>
+    </section>
 </body>
 </html>
